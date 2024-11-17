@@ -1,5 +1,5 @@
 
-const provider = new Web3.providers.HttpProvider('https://sepolia.infura.io/v3/<TON_PROJECT_ID>');
+const provider = new Web3.providers.HttpProvider('https://sepolia.infura.io/v3/d228d5c338ad41a49109bde88c5b47d6');
 const web3 = new Web3(provider);let account;
 let contract; // Déclarez la variable contract à l'échelle globale
 // Récupérer l'ABI et le bytecode du contrat (assurez-vous que les fichiers sont dans le même répertoire)
