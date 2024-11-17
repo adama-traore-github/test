@@ -1,0 +1,165 @@
+   /* Style de base */
+   body {
+    font-family: Arial, sans-serif;
+    
+    
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Conteneur principal pour les deux sections */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+/* Style des sections gauche et droite */
+.card {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    transition: transform 0.3s ease;
+    margin-top:16px;
+}
+
+/* Ajouter un effet hover sur les cartes */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section gauche : création de token */
+.card-left {
+    background-color: #eef6fd;
+}
+
+/* Section droite : tokens émis */
+.card-right {
+    background-color: #eafbee;
+}
+
+/* Titres de sections */
+.title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Formulaire de création de token */
+#createTokenForm label {
+    font-weight: bold;
+    color: #555;
+}
+
+#createTokenForm input {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+#createTokenForm input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#createTokenForm button {
+    padding: 15px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#createTokenForm button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Liste des tokens */
+.token-container {
+    max-height: 440px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.token-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Card pour l'historique des transactions */
+.transaction-card {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff6e6;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left:144px;
+}
+
+/* En-tête de l'historique */
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Conteneur défilable pour les transactions */
+.transaction-history-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    
+}
+
+.transaction-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Bouton historique */
+#toggleHistoryButton {
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#toggleHistoryButton:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+} 
